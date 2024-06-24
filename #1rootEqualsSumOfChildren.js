@@ -18,12 +18,7 @@
 // -100 <= Node.val <= 100
 
 var checkTree = function (root) {
-  // return root.val == root.left.val + root.right.val;
-  if (root[0] == root[1] + root[2]) {
-    return true;
-  }
-
-  return false;
+  return root.val == root.left.val + root.right.val;
 };
 
 console.log(checkTree([10, 4, 6]));
